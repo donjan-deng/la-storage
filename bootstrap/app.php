@@ -44,6 +44,7 @@ $app->singleton(
 );
 $app->configure('service'); //加载配置文件
 $app->configure('filesystems');
+$app->configure('logging');
 /*
   |--------------------------------------------------------------------------
   | Register Middleware
