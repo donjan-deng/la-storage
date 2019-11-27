@@ -42,7 +42,7 @@ COPY . /app
 WORKDIR /app
 
 # 执行 Composer 安装依赖
-RUN composer install
+RUN composer install --optimize-autoloader
 
 # 连接入口文件
 RUN rm -fr /var/www/html \
