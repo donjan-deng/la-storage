@@ -10,7 +10,7 @@ pipeline {
         stage('Test') { //执行测试
             agent { dockerfile true }
             steps {
-                sh 'vendor/bin/phpunit'
+                sh 'cd /app && vendor/bin/phpunit'
             }
         }
         stage('Deploy') { //发布到仓库
