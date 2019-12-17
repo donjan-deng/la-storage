@@ -42,6 +42,7 @@ $app->singleton(
 $app->singleton(
         Illuminate\Contracts\Console\Kernel::class, App\Console\Kernel::class
 );
+$app->configure('app');
 $app->configure('service'); //加载配置文件
 $app->configure('filesystems');
 $app->configure('logging');
